@@ -151,7 +151,7 @@ function uiUpdate(data, parentElement , currencyName) {
     //data to html
     headingHTML.innerHTML = 
     `
-    <img src="${data.image.small}" alt="data.name logo" srcset="">
+    <img src="${data.image.small}" alt="${data.name}-logo" srcset="">
     <a href="${data.links.homepage[0]}">${data.name} (${data.symbol.toUpperCase()})</a>
     `;
     
