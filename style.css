@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+* {padding: 0px;margin: 0px;}
+
+:root {
+  font-size: 14px;
+  
+  --bg : #2A2D43;
+  --text-color : #fff;
+  --btn : #414361;
+  --input-backgroud : #D6F0EF;
+}
+body { 
+  padding: .5rem 0rem;
+  letter-spacing: 1.5px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+/* NAME */
+.brand-name {
+  color: var(--text-color);
+  padding:2rem 0rem;
+  font-family: 'Share Tech', sans-serif;
+  text-align: center;
+}
+/* currency change */
+#lang {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  background-color: (var(--btn));
+  color: var(--text-color);
+  outline:1px solid #298C89;
+  border: none;
+  padding: .5rem 3rem 0.5rem 0.2rem;
+  transition: all .2s;
+}
+#lang:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+#lang option {
+  background-color: var(--btn);
+  color: var(--text-color);
+}
+/* form */
+#form {
+  display: grid;
+  grid-template-areas:
+  "input1 vs input2"
+  ". . ."
+  ". cBtn .";
+  grid-area: auto;
+  align-items: center;
+  width: 50%;
+  margin: 2rem auto;
+}
+.input {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: .8rem .1rem;
+  text-align: center;
+  transition: all .2s;
+  border-radius: 5px;
+  background-color: var(--input-backgroud);
+}
+.input:focus {
+  opacity: .9;
+}
+#input1 {
+  grid-area: input1;
+}
+#input2 {
+  grid-area: input2;
+}
+#label {
+  grid-area: vs;
+  color: var(--text-color);
+  font-size: 2rem;
+  text-align: center;
+}
+#compareBtn {
+  margin-top: 2rem;
+  grid-area: cBtn;
+}
+.btn {
+  letter-spacing: 2px;
+  background-color:transparent;
+  color: #fff;
+  outline:1px solid #298C89;
+  border: none;
+  padding:  .6rem 1rem;;
+  transition: all .2s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color:#298C89;
+}
+/* DATA */
+.show {
+    box-sizing: border-box;
+    text-align: center;
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+/* EACH COIN */
+.coin {
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+/* COIN heading */
+.heading {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.heading img {
+  margin: 0 auto;
+  display: block;
+}
+.heading a {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 1rem 0rem;
+} 
+.heading a:hover {
+    opacity: .5; 
+    cursor: pointer;
+}
+/* CATEGORIES */
+.categoryDiv {
+  width: 100%;
+  padding: .5rem 0rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eachCategory {
+  color: var(--bg);
+  background-color: var(--input-backgroud);
+  border-radius: 50px;
+  font-size: .7rem;
+  padding: .2rem .5rem;
+  margin: 0rem .2rem;
+}
+/* DATA */
+.data  > div{
+  padding: 1rem 0rem;
+}
+.data  > div:nth-child(odd) {
+  background-color: var(--btn);
+}
+/* PRICE */
+.price {
+  font-size: 1.5rem !important; 
+}
+/* HISTORY PRICE */
+.historyPrice {
+  font-size: .9rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.time{display: block;}
+.historyPrice > p {
+  padding: .2rem 0rem;
+}
+/* 24h HISTORY */
+.history24 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.history24 > p {
+  font-size: .8rem;
+  padding: 0rem 1rem;
+}
+.history24  span {
+  display: block;
+}
+/* SOCIAL LINKS */
+.social {
+  background-color: var(--btn);
+  padding: 1rem 0rem;
+}
+.social > a{
+  color: var(--text-color); 
+  font-size: 1.3rem;
+  margin: 0 .2rem;
+}
+.social > a:hover {
+  opacity: .5;
+}
+/* ERROR */
+.error-ul {
+  padding: 1rem;
+  text-align: left;
+}
+.error-ul a{
+  all: unset;
+  color: var(--input-backgroud);
+}
+.error-ul a:hover{
+  cursor: pointer;
+  opacity: .5;
+}
+.green {
+  color: yellowgreen !important;
+}
+.red {
+  color: #ff0033 !important;
+}
+.hide {
+  display: none !important;
+}
+/* FOOTER */
+footer {
+  padding: 2rem 0rem .5rem 0rem;
+  font-size: .8rem;
+}
+footer a{
+  all: unset;
+  color: var(--input-backgroud);
+}
+footer a:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+/* RESPONSIVE */
+@media all and (max-width:1150px){
+  #form {
+    width: 70%;
+  }
+}
+@media all and (max-width:850px){
+  #form { width: 90%;}
+  .show {grid-template-columns: 1fr}
+}
+@media all and (max-width:650px){
+  :root {font-size: 13px;}
+  #form {
+    width: 70%;
+    grid-template-areas:   
+    "input1"
+    "vs"
+    "input2"
+    "cBtn";
+  }
+  .show {grid-template-columns: 1fr;}
+}
+@media all and (max-width:470px){
+  #lang {position: static;}
+  #label {
+    padding: 1rem 0rem;
+    font-size: 1.5rem;
+  }
+  .btn {
+    width: fit-content;
+    justify-self: center;
+  }
+}
+@media all and (max-width:400px){
+  #form {width: 90%;}
+  .historyPrice {
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 1rem 0rem;
+  }
+}
