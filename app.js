@@ -187,7 +187,7 @@ function uiUpdate(data, parentElement , currencyName) {
             <p> 24h Low (&darr;) <span class="24_low red">${low_24h}</span>
         </div>  
         <div class="gensisDate"> Genesis : ${data.genesis_date}</div>  
-        <div class="hashingAlgorithm">Hashing Alogrith : ${data.hashing_algorithm}</div> 
+        <div class="hashingAlgorithm">Hashing Algorithm : ${data.hashing_algorithm}</div> 
     `;
     socialHTML.innerHTML = 
     `
