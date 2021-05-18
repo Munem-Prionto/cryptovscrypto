@@ -84,10 +84,10 @@ const generateData = async (id , htmlDiv) => {
         categoryHTML.innerHTML = ``;
         dataHTML.innerHTML= `
         <ul class="error-ul">
-            <li>Use valid <a href="https://www.coingecko.com/en">Coin</a> </li>
-            <li>Check Coin Spelling</li>
+            <li>Use a valid cryptocurrency </li>
+            <li>Use correct spelling</li>
             <li>Use hypehen(-) for multiple word Coins (e.g usd-coin)</li>
-            <li>Contact <a href="https://munemprionto.netlify.app/">developer</a></li>
+            <li>Contact <a href="mailto:munem.prionto@gmail.com?subject=Problem regarding cryptovscrypto">developer</a></li>
         </ul>
         `;
         socialHTML.innerHTML = ``;
